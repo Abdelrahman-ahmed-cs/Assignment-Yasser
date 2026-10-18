@@ -1,0 +1,9 @@
+=== UNIQUE FINDINGS ===
+parse_record                 ValueError           input='Sara Ahmed,999999,'  msg=invalid literal for int() with base 10: ''
+process_line                 ValueError           input='Sara Ahmed,999999,'  msg=invalid literal for int() with base 10: ''
+average                      ZeroDivisionError    input=[]  msg=division by zero
+make_username                ValueError           input='58WAm,dX3a5IDnO'  msg=not enough values to unpack (expected 2, got 1)
+letter_grade                 IndexError           input=-269  msg=list index out of range
+parse_record                 IndexError           input='4;DSDC6'  msg=list index out of range
+process_line                 IndexError           input='4;DSDC6'  msg=list index out of range
+letter_grade (wrong result)  AssertionError       input=-4  msg=negative -4 gave A

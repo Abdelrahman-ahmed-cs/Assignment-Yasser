@@ -1,0 +1,16 @@
+************* Module student_manager
+student_manager.py:69:0: C0116: Missing function or method docstring (missing-function-docstring)
+student_manager.py:73:17: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+student_manager.py:78:0: C0116: Missing function or method docstring (missing-function-docstring)
+student_manager.py:86:0: C0116: Missing function or method docstring (missing-function-docstring)
+student_manager.py:91:0: C0116: Missing function or method docstring (missing-function-docstring)
+student_manager.py:95:0: C0116: Missing function or method docstring (missing-function-docstring)
+student_manager.py:97:11: W0123: Use of eval (eval-used)
+student_manager.py:100:0: C0116: Missing function or method docstring (missing-function-docstring)
+student_manager.py:105:0: C0116: Missing function or method docstring (missing-function-docstring)
+student_manager.py:115:0: C0116: Missing function or method docstring (missing-function-docstring)
+student_manager.py:137:15: W0718: Catching too general exception Exception (broad-exception-caught)
+
+-----------------------------------
+Your code has been rated at 8.45/10
+

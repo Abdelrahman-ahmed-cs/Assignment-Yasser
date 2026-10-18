@@ -1,0 +1,2 @@
+=== UNIQUE FINDINGS (fixed version) ===
+No crashes / wrong results found in 20000 iterations
