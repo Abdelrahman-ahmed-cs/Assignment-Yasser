@@ -42,7 +42,7 @@ def _font(path, size):
 
 
 def editor_shot(code, filename, out, first_line=1, size=13, width_chars=None,
-                highlight=()):
+                highlight=(), hl_color=(58, 45, 45)):
     f = _font(MONO, size)
     ui = _font(SANS, 11)
     lines = code.rstrip("\n").split("\n")
@@ -74,7 +74,8 @@ def editor_shot(code, filename, out, first_line=1, size=13, width_chars=None,
     y0 = title_h + tab_h + 8 * S
     for idx in highlight:
         y = y0 + (idx - first_line) * lh
-        d.rectangle([0, y, W, y + lh], fill=(58, 45, 45))
+        d.rectangle([0, y, W, y + lh], fill=hl_color)
+        d.rectangle([0, y, 3 * S, y + lh], fill=(230, 120, 60) if hl_color == (58, 45, 45) else (80, 200, 120))
     for i in range(len(lines)):
         d.text((gutter - cw * 1.5, y0 + i * lh), str(first_line + i), font=f,
                fill=EDITOR["ln"], anchor="ra")
