@@ -352,7 +352,6 @@ def draw_cover(c, doc):
     c.line(MARGIN, 1.9 * cm, PAGE_W - MARGIN, 1.9 * cm)
     c.setFont("Sans", 9)
     c.setFillColor(MUTED)
-    c.drawString(MARGIN, 1.25 * cm, "Kali Linux  ·  Python 3  ·  Bandit  ·  Pylint  ·  custom random fuzzer")
     c.drawRightString(PAGE_W - MARGIN, 1.25 * cm, "October 2026")
     c.restoreState()
 
@@ -414,15 +413,7 @@ s += [Spacer(1, 0.6 * cm),
       Spacer(1, 0.2 * cm)]
 bar = Table([[""]], colWidths=[1.6 * cm], rowHeights=[3], hAlign="LEFT")
 bar.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, -1), AMBER)]))
-s += [bar, Spacer(1, 0.6 * cm), toc, Spacer(1, 1.2 * cm),
-      callout("A small Python program was written with deliberate bugs and security weaknesses "
-              "(Part 1). It was then attacked, without changing it, by a random fuzzer and by two static "
-              "analysers (Part 2). Every finding was fixed and the same tests were run again to prove the "
-              "fixes work. The report closes with a side-by-side comparison of the two testing techniques.",
-              "About this report"),
-      Spacer(1, 0.4 * cm),
-      table([["Team member", "Student ID"]] + [[n, f"<font name='Mono'>{i}</font>"] for n, i in TEAM],
-            [0.7, 0.3]),
+s += [bar, Spacer(1, 0.6 * cm), toc,
       PageBreak()]
 
 # ------------------------------------------------------------------ 01 overview
